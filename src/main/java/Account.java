@@ -21,6 +21,10 @@ public class Account {
         transaction.debit(amount, date);
     }
 
+    void sendMoney(double amount, String date){
+        transaction.debit(amount, date);
+    }
+
     void printStatement(PrintStream printer) {
         statement.statementTitle(printer);
         statement.printLines(printer);

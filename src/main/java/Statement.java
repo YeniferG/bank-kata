@@ -4,7 +4,7 @@ import java.util.List;
 
 public class Statement {
 
-    static List<String> statementList = new ArrayList<>();
+    private static List<String> statementList = new ArrayList<>();
 
     public void statementTitle(PrintStream printer){
         String title = "|   Date   | Credit |  Debit  |  Balance  |";
