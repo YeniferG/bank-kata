@@ -1,3 +1,5 @@
+package com.sofka.bank;
+
 import java.text.DecimalFormat;
 
 public class StatementLine {

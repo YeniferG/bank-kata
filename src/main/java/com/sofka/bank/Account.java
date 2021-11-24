@@ -1,3 +1,5 @@
+package com.sofka.bank;
+
 import java.io.PrintStream;
 
 public class Account {

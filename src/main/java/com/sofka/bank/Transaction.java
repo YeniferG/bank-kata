@@ -1,3 +1,5 @@
+package com.sofka.bank;
+
 public class Transaction {
 
     private double balance = 0;
