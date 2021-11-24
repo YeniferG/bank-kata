@@ -1,15 +1,29 @@
+import java.io.PrintStream;
+
 public class Account {
 
-    void deposit(int amount) {
+    private Statement statement = new Statement();
+    private Transaction transaction = new Transaction();
 
+    public String date(String dateString){
+        return dateString;
     }
 
-    void withdraw(int amount){
-
+    public Account(Statement statement) {
+        this.statement = statement;
     }
 
-    void printStatements() {
+    void deposit(double amount, String date) {
+        transaction.credit(amount, date);
+    }
 
+    void withdraw(double amount, String date){
+        transaction.debit(amount, date);
+    }
+
+    void printStatement(PrintStream printer) {
+        statement.statementTitle(printer);
+        statement.printLines(printer);
     }
 
 }
