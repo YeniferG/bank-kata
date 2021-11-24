@@ -5,6 +5,10 @@ public class Account {
     private Statement statement = new Statement();
     private Transaction transaction = new Transaction();
 
+    public Account() {
+        
+    }
+
     public String date(String dateString){
         return dateString;
     }
@@ -26,6 +30,7 @@ public class Account {
     }
 
     void printStatement(PrintStream printer) {
+        printer.println("\n**** FILTER STATEMENT ALL ****\n");
         statement.statementTitle(printer);
         statement.printLines(printer);
     }
